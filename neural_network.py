@@ -12,7 +12,7 @@ def norm(X):
     :param X: The activation of a pixel of an image in the MNIST dataset
     :return: The normalized activation
     """
-    return X/255
+    return X / 255
 
 
 #getting the data
@@ -78,7 +78,6 @@ def backwards(A0, A1, Z1, A2, Z2, A3, Z3):
     """
     m = train_y.size
     one_hot_y = one_hot(train_y, m)
-
 
 
 def one_hot(Y, m):
